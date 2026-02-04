@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { CommonSvg } from "../common-svg/common-svg";
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [CommonSvg],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
