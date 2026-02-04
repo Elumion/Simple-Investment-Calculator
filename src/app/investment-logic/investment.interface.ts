@@ -6,8 +6,10 @@ export interface InvestmentInput {
 }
 
 export interface InvestmentOutput {
-  investmentValue: number;
+  year: number;
+  valueEndOfYear: number;
   interest: number;
   totalInterest: number;
-  investedCapital: number;
+  totalAmountInvested: number;
+  annualInvestment: number;
 }

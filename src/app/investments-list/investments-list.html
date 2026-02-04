@@ -1,0 +1,19 @@
+<div class="investments-container">
+  <ul class="investments-list">
+    <li class="investments-titles-row">
+      <span class="title">Year</span>
+      <span class="title">Investment Value</span>
+      <span class="title">Interest (Year)</span>
+      <span class="title">Total Interest</span>
+      <span class="title">Invested Capital</span>
+    </li>
+    <li class="investments-values-row" *ngFor="let predictedResult of investmentOutputs, let i = index">
+      <span class="year">{{ predictedResult.year }}</span>
+      <span class="value">${{ predictedResult.valueEndOfYear | toFixed:2}}</span>
+      <span class="interest">{{ predictedResult.interest | toFixed:2 }}</span>
+      <span class="total-interest">{{ predictedResult.totalInterest | toFixed:2 }}</span>
+      <span class="invested-capital">${{ predictedResult.totalAmountInvested | toFixed:2 }}</span>
+    </li>
+  </ul>
+
+</div>

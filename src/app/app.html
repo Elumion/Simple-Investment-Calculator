@@ -3,9 +3,12 @@
 
     <app-header></app-header>
   </div>
-  <div>
-    <app-form-calculate></app-form-calculate>
-  </div>
+  <section>
+    <app-form-calculate />
+  </section>
+  <section *ngIf="investmentOutputs.length > 0">
+    <app-investments-list />
+  </section>
 </main>
 
 

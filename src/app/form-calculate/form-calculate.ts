@@ -25,10 +25,10 @@ export class FormCalculate {
     });
 
     this.investmentLogic.calculateInvestments(
-      this.initialInvestment,
-      this.annualInvestment,
-      this.expectedReturn,
-      this.duration,
+      +this.initialInvestment,
+      +this.annualInvestment,
+      +this.expectedReturn,
+      +this.duration,
     );
   }
 }
